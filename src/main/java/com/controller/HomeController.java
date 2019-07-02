@@ -32,7 +32,7 @@ public class HomeController {
 	public String login(@RequestParam(value = "error", required = false) String error,
 			@RequestParam(value = "logout", required = false) String logout, Model model) {
 		if (error != null)
-			model.addAttribute("error", "Invalid username and Password");
+			model.addAttribute("error", "Invalid usernames and Password");
 		if (logout != null)
 			model.addAttribute("logout", "You have logged out successfully");
 		return "login";
